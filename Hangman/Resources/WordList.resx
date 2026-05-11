@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>Ball</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Haus</value>
+  </data>
+  <data name="String100" xml:space="preserve">
+    <value>Kühltasche</value>
+  </data>
+  <data name="String101" xml:space="preserve">
+    <value>Erdbeerkuchen</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Apfel</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Hund</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Blume</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Mega</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Zink</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>Igel</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Fix</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Zeit</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Wald</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Film</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Efeu</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Clip</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>Zaun</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>Rot</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>Blau</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>Rechts</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>Zahl</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>Hans</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>Zeichen</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Schiff</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Schattenboxen</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>Tiktoker</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Einfaltspinsel</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>Galionsfigur</value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>Portemonnaie</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>Quarzuhr</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>Xylophon</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>Dumpfbacke</value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>Firlefanz</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>Gestrüpp</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Sonne</value>
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value>Ziffer</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>Pfahl</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>Eichhörnchen</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>Quietscheentchen</value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>Schlittschuh</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>Wellensittichfutter</value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value>Geburtstagskuchen</value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>Elefantenrüssel</value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>Kummerspeck</value>
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value>Fremdschämen</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Mädchen</value>
+  </data>
+  <data name="String50" xml:space="preserve">
+    <value>Verschlimmbesserung</value>
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value>Leuchtturmwärter</value>
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value>Spinnenbeine</value>
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value>Roboter</value>
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value>Hausdach</value>
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value>Backsteinmauer</value>
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value>Haftpflichtversicherung</value>
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value>Streichholzschachtel</value>
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value>Litfaßsäule</value>
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value>Wasserfall</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Baum</value>
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value>Taschenlampe</value>
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value>Regenbogen</value>
+  </data>
+  <data name="String62" xml:space="preserve">
+    <value>Zahnarzt</value>
+  </data>
+  <data name="String63" xml:space="preserve">
+    <value>Keksdose</value>
+  </data>
+  <data name="String64" xml:space="preserve">
+    <value>Bratpfanne</value>
+  </data>
+  <data name="String65" xml:space="preserve">
+    <value>Federkissen</value>
+  </data>
+  <data name="String66" xml:space="preserve">
+    <value>Staubsauger</value>
+  </data>
+  <data name="String67" xml:space="preserve">
+    <value>Kühlschrank</value>
+  </data>
+  <data name="String68" xml:space="preserve">
+    <value>Waschmaschine</value>
+  </data>
+  <data name="String69" xml:space="preserve">
+    <value>Gänseblümchen</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Junge</value>
+  </data>
+  <data name="String70" xml:space="preserve">
+    <value>Zugticket</value>
+  </data>
+  <data name="String71" xml:space="preserve">
+    <value>Fahrradkette</value>
+  </data>
+  <data name="String72" xml:space="preserve">
+    <value>Taschenmesser</value>
+  </data>
+  <data name="String73" xml:space="preserve">
+    <value>Schreibtischlampe</value>
+  </data>
+  <data name="String74" xml:space="preserve">
+    <value>Schmetterling</value>
+  </data>
+  <data name="String75" xml:space="preserve">
+    <value>Dutchman</value>
+  </data>
+  <data name="String76" xml:space="preserve">
+    <value>Schneeflocke</value>
+  </data>
+  <data name="String77" xml:space="preserve">
+    <value>Kirschbaum</value>
+  </data>
+  <data name="String78" xml:space="preserve">
+    <value>Dachfenster</value>
+  </data>
+  <data name="String79" xml:space="preserve">
+    <value>Ohrwurm</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Katze</value>
+  </data>
+  <data name="String80" xml:space="preserve">
+    <value>Fußmatte</value>
+  </data>
+  <data name="String81" xml:space="preserve">
+    <value>Kleiderschrank</value>
+  </data>
+  <data name="String82" xml:space="preserve">
+    <value>Taschenrechner</value>
+  </data>
+  <data name="String83" xml:space="preserve">
+    <value>Zahnpastatube</value>
+  </data>
+  <data name="String84" xml:space="preserve">
+    <value>Spiegelbild</value>
+  </data>
+  <data name="String85" xml:space="preserve">
+    <value>Handschuhfach</value>
+  </data>
+  <data name="String86" xml:space="preserve">
+    <value>Laternenpfahl</value>
+  </data>
+  <data name="String87" xml:space="preserve">
+    <value>Bücherregal</value>
+  </data>
+  <data name="String88" xml:space="preserve">
+    <value>Wolkenkratzer</value>
+  </data>
+  <data name="String89" xml:space="preserve">
+    <value>Briefkasten</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Blume</value>
+  </data>
+  <data name="String90" xml:space="preserve">
+    <value>Spaghetti</value>
+  </data>
+  <data name="String91" xml:space="preserve">
+    <value>Pizzaschneider</value>
+  </data>
+  <data name="String92" xml:space="preserve">
+    <value>Sandkasten</value>
+  </data>
+  <data name="String93" xml:space="preserve">
+    <value>Kaffeetasse</value>
+  </data>
+  <data name="String94" xml:space="preserve">
+    <value>Müslischale</value>
+  </data>
+  <data name="String95" xml:space="preserve">
+    <value>Teekessel</value>
+  </data>
+  <data name="String96" xml:space="preserve">
+    <value>Bleistiftspitzer</value>
+  </data>
+  <data name="String97" xml:space="preserve">
+    <value>Wasserglas</value>
+  </data>
+  <data name="String98" xml:space="preserve">
+    <value>Regenjacke</value>
+  </data>
+  <data name="String99" xml:space="preserve">
+    <value>Schlafanzug</value>
+  </data>
+</root>

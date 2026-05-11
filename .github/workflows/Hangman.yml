@@ -1,0 +1,87 @@
+# ------------------------------------------------------------------------------------------------------------------------------------------------
+#                                                               pipeline trigger
+# ------------------------------------------------------------------------------------------------------------------------------------------------
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      release:
+        description: "Upload release artifact"
+        required: true
+        default: false
+        type: boolean
+
+      release_as:
+        description: "Release version"
+        required: true
+        type: string
+
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------
+#                                                               jobs
+# ------------------------------------------------------------------------------------------------------------------------------------------------
+
+jobs:
+  # ----------------------------------------------------------------------------------------------------------------------------------------------
+  #                                                               build_windows
+  # ----------------------------------------------------------------------------------------------------------------------------------------------
+
+  build_windows:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Hangman for Windows
+        shell: pwsh
+        run: |
+          echo "setting up build environment"
+          cd CI
+          python dev-env.py
+          cd ..
+          echo "successfully set up build environment"
+
+          echo "now building Hangman for Windows"
+          .\CI\build.ps1
+          echo "successfully built Hangman for Windows"
+
+      - name: Upload build artifacts
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.release == true }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: hangman-build-output
+          path: |
+            Hangman.exe
+            Hangman.exe.config
+            Hangman.pdb
+          if-no-files-found: error
+
+
+  # ----------------------------------------------------------------------------------------------------------------------------------------------
+  #                                                               upload_to_package_registry
+  # ----------------------------------------------------------------------------------------------------------------------------------------------
+
+  upload_to_package_registry:
+    runs-on: windows-latest
+    needs:
+      - build_windows
+
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.release == true }}
+
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: hangman-build-output
+          path: package
+
+      - name: Upload package registry artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Hangman-${{ inputs.release_as }}
+          path: |
+            package/Hangman.exe
+            package/Hangman.exe.config
+            package/Hangman.pdb
+          if-no-files-found: error
