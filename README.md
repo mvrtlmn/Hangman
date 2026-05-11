@@ -218,7 +218,7 @@ Run the application:
 
 ```bash
 cd ..
-dotnet run
+.\Hangman.exe
 ```
 
 ## Notes
