@@ -6,6 +6,14 @@ A console-based Hangman game written in C#.
 The program recreates the classic Hangman game as a console application.  
 The player's goal is to guess a randomly selected word by entering single letters or complete words before reaching the maximum number of incorrect guesses.
 
+## Release
+
+A prebuilt Windows release is available here:
+
+[Download Hangman release](https://github.com/mvrtlmn/Hangman/releases)
+
+The release contains the executable and required runtime files.
+
 ## Features
 
 - Classic Hangman gameplay in the console
@@ -193,7 +201,7 @@ Hangman/
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/mvrtlmn/Hangman.git
 ```
 
 Navigate into the project directory:
