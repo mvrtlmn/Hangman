@@ -1,0 +1,7 @@
+lib/
+bin/
+obj/
+.vs/
+Hangman.exe
+Hangman.exe.config
+Hangman.pdb

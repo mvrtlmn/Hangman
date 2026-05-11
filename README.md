@@ -64,17 +64,17 @@ The `ESC` key can be used at any time to return to the main menu.
 
 ![Main Menu](docs/images/main-menu.png)
 
-### Game Display
+### Gameplay
 
-![Game Display](docs/images/gameplay.png)
+![Gameplay](docs/images/gameplay.png)
 
-### Winning Screen
+### Win
 
-![Winning Screen](docs/images/win.png)
+![Win](docs/images/win.png)
 
-### Loss Screen
+### Loss
 
-![Loss Screen](docs/images/loss.png)
+![Loss](docs/images/loss.png)
 
 ## Technical Structure
 
@@ -183,9 +183,9 @@ Hangman/
 └── docs/
     └── images/
         ├── main-menu.png
-        ├── game-display.png
-        ├── winning-screen.png
-        └── loss-screen.png
+        ├── gameplay.png
+        ├── win.png
+        └── loss.png
 ```
 
 ## Installation and Usage
@@ -202,15 +202,22 @@ Navigate into the project directory:
 cd Hangman
 ```
 
-Build the project:
+Before building, prepare the local reference assemblies:
 
-```bash
-dotnet build
+```powershell
+python .\CI\dev-env.py
+```
+
+Then build the solution:
+
+```powershell
+.\CI\build.ps1
 ```
 
 Run the application:
 
 ```bash
+cd ..
 dotnet run
 ```
 
